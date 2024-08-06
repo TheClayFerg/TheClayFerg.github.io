@@ -1,3 +1,9 @@
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 img {
   display: grid;
   max-width: 80%;
@@ -55,8 +61,17 @@ img {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: #e9e7e7;
 }
 
 /* Media Queries for Mobile Devices */
@@ -87,6 +102,31 @@ body {
 
   img:hover {
     transform: scale(1.05);
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    display: block;
+    text-align: left;
+  }
+
+  form {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  input[type="submit"] {
+    height: 50px;
   }
 }
 
@@ -156,4 +196,25 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+div {
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8 px;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #f5d1d1;
 }
